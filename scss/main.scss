@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import "reset","common","mixins","vaialbes";
+
+#m_top_wrap{width:100%; height:820px;background-image:linear-gradient(#f8faff 67.5%,#f0f4ff 0);}
+.m_top{width:1200px; height:756px; margin:0 auto;}
+.m_top img:first-child{width:65%;}
+
+#m1>h2{font-size:60px}
+
+#m1{
+    h2{
+        font-size:60px
+    }
+    p{
+        font-size: 120px;
+        span{
+
+        }
+        &::after{
+            content:'';
+        }
+        &:hover{
+
+        }
+    }
+}
+
+
+
+
+h2 {
+ @include large-text; 
+ }
+

@@ -1,0 +1,20 @@
+@charset "uft-8";
+
+@mixin large-text{
+    font-size:49px;
+    font-weight:700;
+    color:#242424;
+    line-height:130%;
+}
+
+@mixin main_content{
+    margin:0 auto;
+    text-align:center;
+    width:1200px;
+}
+
+@mixin wrap_content{
+    width:100%;
+    background-color: $back_color;
+}
+
