@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <header>
         <a href="#"><img src="img/logo.png" alt="logo"></a>
@@ -22,23 +25,25 @@
     <div id="fix_menu">첫 달 무료로 독서 시작하기</div>
     <div id="m_top_wrap">
         <div class="m_top">
-        <img src="img/back.png" alt="bg">
-        <img src="img/top_text.png" alt="text">
-        <img src="img/kologo.png" alt="klogo">
+            <img src="img/back.png" alt="bg">
+            <img src="img/top_text.png" alt="text">
+            <img src="img/kologo.png" alt="klogo">
         </div>
     </div>
     <div id="m1">
         <h2>당신을 기다리는<br>15만 권의 도서</h2>
         <p>첫 달 무료 구독을 통해<br>어떤 도서가 있는지 확인해보세요</p>
-        <div class="m1_slide1"></div>
-        <div class="m1_slide2"></div>
-        <div class="m1_slide3"></div>
+        <div class="m1_slide"></div>
+        <div class="m1_slide"></div>
+        <div class="m1_slide"></div>
     </div>
     <div id="m2">
-        <h2>나만의 공간을 아름답게<br>채워주는 오브제북</h2>
-        <p>이미지와 사운드로 극대화된<br>책의 감성을 오롯이 느껴보세요.</p>
-        <iframe src="#" frameborder="0"></iframe>
-        <div class="m2_button">오브제북 보러가기></div>
+        <div class="m2wrap">
+            <h2>나만의 공간을 아름답게<br>채워주는 오브제북</h2>
+            <p>이미지와 사운드로 극대화된<br>책의 감성을 오롯이 느껴보세요.</p>
+            <img src="img/m2img.jpg" alt="m2">
+            <div class="m2_button">오브제북 보러가기></div>
+        </div>
     </div>
     <div id="m3">
         <h2>싹 다 무제한<br>9,900원</h2>
@@ -76,7 +81,7 @@
     </div>
     <div id="m4">
         <h2>관심 분야에 있는 책도<br>딱 골라드려요</h2>
-        <p>검색어 순위를 통해 뽑은<p>인기 분야 책들을 확인해보세요</p>
+        <p>검색어 순위를 통해 뽑은<br>인기 분야 책들을 확인해보세요</p>
         <ul id="recommend_list">
             <li>주식</li>
             <li>영어</li>
@@ -130,76 +135,82 @@
             <div class="box"></div>
         </div>
     </div>
-    <div id="m5">
-        <h2>당신이 끝까지 읽을 책을<br>알려주는 완독지수</h2>
-        <p>600만 밀리 회원이 먼저 읽고 다 읽을 확률과 예상 시간을 알려드려요</p>
-        <div class="card">
-            <img src="img/cellphone.png" alt="cellphone">
-            <img src="img/card1.png" alt="card1">
-            <img src="img/card2.png" alt="card2">
-            <img src="img/card3.png" alt="card3">
-            <img src="img/card4.png" alt="card4">
+    <div id="m5_wrap">
+        <div class="m5">
+            <h2>당신이 끝까지 읽을 책을<br>알려주는 완독지수</h2>
+            <p>600만 밀리 회원이 먼저 읽고<br>다 읽을 확률과 예상 시간을 알려드려요</p>
+            <div class="card">
+                <img src="img/cellphone.png" alt="cellphone">
+                <img src="img/card1.png" alt="card1">
+                <img src="img/card2.png" alt="card2">
+                <img src="img/card3.png" alt="card3">
+                <img src="img/card4.png" alt="card4">
+            </div>
         </div>
     </div>
-    <div id="m6">
-        <h2>언제든 해지 가능!<br>첫 달 무료로 가볍게</h2>
-        <p>상황에 맞게 원하는 요금제를<br>자유롭게 선택하세요</p>
-        <div class="m6_sub 1">
-            <h6>전자책 정기구독</h6>
-            <div class="month">
-                <span>월</span>
-                <div class="price">9,900</div>
-                <span>원</span>
-            </div>
-            <div class="dc">
-                <span>118,800</span>
-                <img src="img/dc.png" alt="dc">
-            </div>
-            <div class="year">
-                <span>연</span>
-                <div class="price">99,000</div>
-                <span>원</span>
-            </div>
-            <p>밀리에서 제공하는 콘텐츠를 무제한으로</p>
-        </div>
-        <div class="m6_sub 2">
-            <h6>종이책 정기구독</h6>
-            <div class="month">
-                <span>월</span>
-                <div class="price">15,900</div>
-                <span>원</span>
-            </div>
-            <div class="dc">
-                <span>202,800</span>
-                <img src="img/dc.png" alt="dc">
-            </div>
-            <div class="year">
-                <span>연</span>
-                <div class="price">183,000</div>
-                <span>원</span>
-            </div>
-            <p>밀리의 모든 콘텐츠를 무제한으로 보고<br>
-               2달에 1번 종이책+전자책 배송까지</p>
-        </div>
-        
-        <div class="m6_sub 3">
-            <div class="m6_icon">
-                <img src="img/m6icon1.png" alt="icon">
-                <span>무료 체험 기간동안 해지해도 금액이 청구되지 않아요.</span>
-            </div>
-            <div class="m6_icon">
-                <img src="img/m6icon2.png" alt="icon">
-                <span>유료 결제되어도 사용 이력이 없으면 즉시 환불해드려요</span>
+    <div id="m6_wrap">
+        <div class="m6">
+            <h2>언제든 해지 가능!<br>첫 달 무료로 가볍게</h2>
+            <p>상황에 맞게 원하는 요금제를<br>자유롭게 선택하세요</p>
+            <div class="m6_subwrap">
+                <div class="m6_sub 1">
+                    <h6>전자책 정기구독</h6>
+                    <div class="month">
+                        <span>월</span>
+                        <div class="price">9,900</div>
+                        <span>원</span>
+                    </div>
+                    <div class="dc">
+                        <span>118,800</span>
+                        <img src="img/dc.png" alt="dc">
+                    </div>
+                    <div class="year">
+                        <span>연</span>
+                        <div class="price">99,000</div>
+                        <span>원</span>
+                    </div>
+                    <p>밀리에서 제공하는 콘텐츠를 무제한으로</p>
+                </div>
+                <div class="m6_sub 2">
+                    <h6>종이책 정기구독</h6>
+                    <div class="month">
+                        <span>월</span>
+                        <div class="price">15,900</div>
+                        <span>원</span>
+                    </div>
+                    <div class="dc">
+                        <span>202,800</span>
+                        <img src="img/dc.png" alt="dc">
+                    </div>
+                    <div class="year">
+                        <span>연</span>
+                        <div class="price">183,000</div>
+                        <span>원</span>
+                    </div>
+                    <p>밀리의 모든 콘텐츠를 무제한으로 보고<br>
+                        2달에 1번 종이책+전자책 배송까지</p>
+                </div>
+
+                <div class="m6_sub 3">
+                    <div class="m6_icon">
+                        <img src="img/m6icon1.png" alt="icon">
+                        <span>무료 체험 기간동안 해지해도 금액이 청구되지 않아요.</span>
+                    </div>
+                    <div class="m6_icon">
+                        <img src="img/m6icon2.png" alt="icon">
+                        <span>유료 결제되어도 사용 이력이 없으면 즉시 환불해드려요</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div id="m7">
         <div class="m7_top">
-            <div class="m7_audio"></div>
-            <div class="m7_viewer"></div>
+            <div class="m7_audio">오디오북</div>
+            <div class="m7_viewer">밀리뷰어</div>
         </div>
         <div class="m7_content">
-            <div class="m7_content_audio">
+            <div class="m7_content_a">
                 <h2>오디오북</h2>
                 <p>세상에서 가장<br>교양있는 수면제</p>
                 <div class="m7_img">
@@ -210,20 +221,20 @@
                 </div>
                 <div class="m7_text">
                     <div class="m7_text1">
-                     <p><b>하루의 시작과 마무리를 오디오북과 함께</b><br>
-                     지하철에서도,잠들기 전에도 독서하세요</p>
+                        <p><b>하루의 시작과 마무리를 오디오북과 함께</b><br>
+                            지하철에서도,잠들기 전에도 독서하세요</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>귀로 듣다가 눈으로 같이 보면</b><br>
-                        더 내용이 잘 이해돼요</p>
+                            더 내용이 잘 이해돼요</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>30분만에 책 요약</b><br>
-                        핵심만 쏙 골라 읽어주는 오디오북</p>
+                            핵심만 쏙 골라 읽어주는 오디오북</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>이제훈부터 옥주현까지</b><br>
-                        셀럽이 읽어주는 오디오북</p>
+                            셀럽이 읽어주는 오디오북</p>
                     </div>
                 </div>
                 <div class="m7_button">
@@ -233,31 +244,31 @@
                     <div class="m7_btn">4</div>
                 </div>
             </div>
-            <div class="m7_content_viewer">
+            <div class="m7_content_a view">
                 <h2>밀리 뷰어</h2>
                 <p>독서를 위한 가장<br>완벽한 도구</p>
                 <div class="m7_img">
-                    <img src="m7_aa" alt="m72">
-                    <img src="m7_bb" alt="m72">
-                    <img src="m7_cc" alt="m72">
-                    <img src="m7_dd" alt="m72">
+                    <img src="img/m7_aa.png" alt="m72">
+                    <video src="img/m7_bb.mp4" alt="m72"></video>
+                    <img src="img/m7_cc.png" alt="m72">
+                    <img src="img/m7_dd.png" alt="m72">
                 </div>
                 <div class="m7_text">
                     <div class="m7_text1">
-                     <p><b>시선 추적 기능</b><br>
-                     눈동자로 페이지를 넘길 수 있어요</p>
+                        <p><b>시선 추적 기능</b><br>
+                            눈동자로 페이지를 넘길 수 있어요</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>어느 기기에서도 OK</b><br>
-                        스마트폰,태블릿,PC,E ink기기까지</p>
+                            스마트폰,태블릿,PC,E ink기기까지</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>다크 모드</b><br>
-                        전자책이 눈 아프다는 편견은 버려요</p>
+                            전자책이 눈 아프다는 편견은 버려요</p>
                     </div>
                     <div class="m7_text1">
                         <p><b>자유로운 보기 설정</b><br>
-                        줄간격부터 폰트까지 내 마음대로 설정하면<br>더욱 편한 독서를 할 수 있어요</p>
+                            줄간격부터 폰트까지 내 마음대로 설정하면<br>더욱 편한 독서를 할 수 있어요</p>
                     </div>
                 </div>
                 <div class="m7_button">
@@ -266,17 +277,24 @@
                     <div class="m7_btn">3</div>
                     <div class="m7_btn">4</div>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
-    <div id="m8">
-        <h2>자주 묻는 질문</h2>
-        <div class="qna m8">안쓰면 정말 환불해 주나요?</div>
-        <div class="qna m8">구독 중 해지 할 수 있나요? 수수료는 없나요?</div>
-        <div class="qna m8">무료 혜택은 누구나 받을 수 있나요?</div>
-        <div class="qna m8">어떤 기기에서 사용할 수 있나요?</div>
+    <div id="m8_wrap">
+        <div class="m8">
+            <h2>자주 묻는 질문</h2>
+            <div class="qna m8">안쓰면 정말 환불해 주나요?</div>
+            <div class="qna m8">구독 중 해지 할 수 있나요? 수수료는 없나요?</div>
+            <div class="qna m8">무료 혜택은 누구나 받을 수 있나요?</div>
+            <div class="qna m8">어떤 기기에서 사용할 수 있나요?</div>
+        </div>
     </div>
     <footer>
+        <div class="f_right">
+            <img src="img/finsta.png" alt="#">
+            <img src="img/fyoutube.png" alt="#">
+            <img src="img/fkakao.png" alt="#">
+        </div>
         <h4>(주)밀리의 서재</h4>
         <h6>사용자 정보 펼쳐보기 ▽</h6>
         <div class="flist">
@@ -287,15 +305,12 @@
             <a href="#">B2B문의></a>
             <a href="#">콘텐츠 제휴문의></a>
             <a href="#">뷰어 다운로드></a>
-            <a href="#">회사 소개></a>      
+            <a href="#">회사 소개></a>
         </div>
-        <p>Copyright®2023 밀리의 서재 All Rights Reserved</p>
-        <div class="f_right">
-            <div class="f_box"><img src="img/finsta.png" alt="#"></div>
-            <div class="f_box"><img src="img/fyoutube.png" alt="#"></div>
-            <div class="f_box"><img src="img/fkakao.png" alt="#"></div>
-        </div>
+        <p>Copyrightⓒ2023 밀리의 서재 All Rights Reserved</p>
+        
     </footer>
 
 </body>
+
 </html>
