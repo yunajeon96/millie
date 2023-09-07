@@ -159,6 +159,7 @@ footer .f_right img {
   width: 1200px;
   height: 1037px;
   width: 100%;
+  overflow: hidden;
 }
 #m1 h2 {
   font-size: 49px;
@@ -167,20 +168,53 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m1 p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
   padding-top: 1%;
   padding-bottom: 2%;
 }
-#m1 .m1_slide {
-  width: 100%;
+#m1 .m1_slide1 {
+  width: 300%;
   height: 180px;
   background: #ffe04b;
   margin: 1% 0;
+  overflow: hidden;
+}
+#m1 .m1_slide1 .box_mini {
+  float: left;
+  margin: 0.2%;
+}
+#m1 .m1_slide2 {
+  width: 300%;
+  height: 180px;
+  background: #ffe04b;
+  margin: 1% 0;
+  overflow: hidden;
+}
+#m1 .m1_slide2 .box_mini {
+  float: left;
+  margin: 0.2%;
+}
+#m1 .m1_slide3 {
+  width: 300%;
+  height: 180px;
+  background: #ffe04b;
+  margin: 1% 0;
+  overflow: hidden;
+}
+#m1 .m1_slide3 .box_mini {
+  float: left;
+  margin: 0.2%;
 }
 
 #m2 {
@@ -200,12 +234,18 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m2 .m2wrap p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m2 .m2wrap img {
   width: 60%;
@@ -238,12 +278,18 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m3 p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m3 h6 {
   font-size: 18px;
@@ -285,12 +331,18 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m4 p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m4 ul {
   display: flex;
@@ -310,9 +362,35 @@ footer .f_right img {
   justify-content: space-between;
 }
 #m4 .recommend .box {
-  height: 60px;
+  height: 300px;
   width: 160px;
-  background-color: yellowgreen;
+  margin: 1% 0;
+}
+#m4 .recommend .box img {
+  width: 100%;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#m4 .recommend .box h3 {
+  font-weight: 800;
+  font-size: 14px;
+}
+#m4 .recommend .box h6 {
+  color: #8b8b8b;
+  font-size: 13px;
+}
+#m4 .recommend .box h4 {
+  color: #333;
+  font-size: 13px;
+}
+#m4 .recommend .box h5 {
+  text-decoration-line: line-through;
+  color: #666;
+  font-size: 11px;
+}
+#m4 .recommend:not(:first-of-type) {
+  display: none;
 }
 
 #m5_wrap {
@@ -332,12 +410,18 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m5_wrap .m5 p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m5_wrap .m5 .card {
   position: relative;
@@ -391,12 +475,18 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m6_wrap .m6 p {
   font-size: 20px;
   font-weight: 600;
   color: #555;
   margin: 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
 }
 #m6_wrap .m6 .m6_subwrap {
   display: flex;
@@ -511,9 +601,13 @@ footer .f_right img {
   height: 550px;
   border-radius: 50px;
 }
-#m7 .m7_content .m7_content_a .m7_img .img {
-  width: 100%;
-  height: 100%;
+#m7 .m7_content .m7_content_a .m7_img img {
+  width: 100px;
+  height: 100px;
+}
+#m7 .m7_content .m7_content_a .m7_img video {
+  width: 30%;
+  height: 30%;
 }
 #m7 .m7_content .view {
   display: none;
@@ -537,6 +631,9 @@ footer .f_right img {
   line-height: 130%;
   padding-top: 8%;
   margin: 0 2% 2%;
+  transform: translateY(-100px);
+  transition: all 3s;
+  opacity: 0;
   padding-bottom: 5%;
 }
 #m8_wrap .m8 .qna {

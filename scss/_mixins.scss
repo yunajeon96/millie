@@ -9,6 +9,9 @@
     line-height:130%;
     padding-top:8%;
     margin:0 2% 2%;
+    transform:translateY(-100px);
+    transition:all 3s;
+    opacity:0;
 }
 
 @mixin p-text{
@@ -16,6 +19,9 @@
     font-weight:600;
     color:#555;
     margin:2%;
+    transform:translateY(-100px);
+    transition:all 3s;
+    opacity:0;
 }
 
 @mixin main_content{
