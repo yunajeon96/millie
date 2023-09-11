@@ -77,6 +77,8 @@ $.ajax({
       for(let i=0; i<m4boxs.length; i++){
         let str=m41.documents[i].title;
         let str1=str.substring(0,21);
+        // let str2=m41.documents[i].authors;
+        // let str3=str2.substring(0,10);
 
         $("#m4>.r1 >.box").eq(i).append("<img src="+m41.documents[i].thumbnail+"/>");
         $("#m4>.r1 >.box").eq(i).append("<h3>"+str1+"</h3>");
@@ -115,7 +117,6 @@ $.ajax({
       })
         .done(function(m43) {
           const m4boxs=document.getElementsByClassName('box');
-         console.log(m43)
           
           for(let i=0; i<m4boxs.length; i++){
             let str=m43.documents[i].title;
