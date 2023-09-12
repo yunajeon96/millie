@@ -54,11 +54,15 @@ $.ajax({
       })
         .done(function(m33) {
         const m3boxs=document.getElementsByClassName('box');
-        for(let a=0; a<m3boxs.length; a++){      
+        // const mp3=document.getElementsByClassName('listbox2>img');
+        for(let a=0; a<m3boxs.length; a++){    
+          
           $("#list_c>.box").eq(a).append("<img src="+m33.documents[a].thumbnail+"/>");
+          $("#list_c>.box").eq(a).append("<img src=img/mp3button.svg>");
           $("#list_c>.box").eq(a).append("<h3>"+m33.documents[a].title+"</h3>");
           $("#list_c>.box").eq(a).append("<h6>"+m33.documents[a].authors+"</h6>");
-          $("#list_c>.box").eq(a).append("<h5>"+m33.documents[a].sale_price+"원</h5>")
+          $("#list_c>.box").eq(a).append("<h5>"+m33.documents[a].sale_price+"원</h5>");
+          // $("#list_c>.box").eq(a).append("<img src="../img/12.png">")
           }
         });
 

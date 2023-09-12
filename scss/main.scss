@@ -43,40 +43,40 @@
     @include main_content;height:1800px;
     h2{@include h2-text;}
     p{@include p-text;}
-    h6{font-size:18px; text-align:left; padding:2%; margin:5% 0 0}
-    .list{height:330px;
+    h6{font-size:20px; font-weight:800;text-align:left; padding:1%; margin:5% 0 0}
+    .list{height:330px; text-align:left;
       .box{height:300px;width:150px; margin:10px;float:left;
         h3{font-size:17px;}
-        h6{font-size:15px; color:#666;text-align:center;}
-        p{font-size:13px;} 
-        img{width:100%;height:auto; }
+        h6{font-size:15px; font-weight:500;color:#666;}
+        h5{font-size:13px; font-weight:500;}
+        img{width:100%;height:auto;}}
+    }
+    #list_c{
+      .box{position:relative; 
+        img:nth-of-type(2){width:40px;margin-top:5%;}
+        .listbox img:nth-of-type(1){width:40px;position:absolute;top:0; right:-6px;}
+        .listbox img:nth-of-type(2){width:40px;position:absolute;top:25px; right:-6px;}
+        
     }
     }
-}
+    }
+
 
 #m4{
     @include main_content;height:750px;
     h2{@include h2-text;}
     p{@include p-text};
     ul{display:flex; flex-flow:row wrap;justify-content:flex-start;margin:5% 0 2%;
-      li{border:0.5px solid #333; border-radius:15px;width:6%;margin:0.2%;}
-      &:hover{cursor:pointer}}
-    // .recommend{display:flex;flex-flow:row nowrap;justify-content:space-between;
-    //   .box{height:300px;width:160px;
-    //       img{width:100%; height:auto; object-fit:cover;}
-    //       h3{font-weight:900;font-size:15px;}
-    //       h6{color:$text_color4;font-size:14px;};
-    //       h5{color:#666;font-size:14px;}
-    //     }}
+      li{border:0.5px solid #333; border-radius:15px;width:6%;margin:0.2%; cursor:pointer;}
+      li:first-child{background-color:#333;color:#fff;}
+     }
     
-    // .recommend:not(:nth-of-type(1)){display:none;} 
-
     .recommend{float:left;overflow:hidden; width:100%;
-        .box{height:310px;width:150px;float:left; margin:0 0.7%;background-color:yellow;
+        .box{height:310px;width:150px;float:left; margin:0 0.7%;text-align:left;
             img{width:100%; height:auto; object-fit:cover;}
             h3{font-weight:900;font-size:15px;}
-            h6{color:$text_color4;font-size:14px;};
-            h5{color:#666;font-size:14px;}
+            h6{color:$text_color4;font-size:14px;font-weight:500;};
+            h5{color:#666;font-size:14px;font-weight:500;}
           }}
       
       .recommend:not(:nth-of-type(1)){display:none;} 
@@ -89,10 +89,10 @@
         p{@include p-text;}
         .card{position:relative;height:515px;
             img:nth-of-type(1){width:35%;position:absolute;left:33%;}
-            img:nth-of-type(2){width:15%;position:absolute;left:10%;top:55%;}
-            img:nth-of-type(3){width:15%;position:absolute;left:15%; top:10%;}
-            img:nth-of-type(4){width:15%;position:absolute;right:15%;top:10%;}
-            img:nth-of-type(5){width:15%;position:absolute;right:10%; top:55%;}
+            img:nth-of-type(2){width:15%;position:absolute;left:10%;top:55%;transform:translateY(50px);transition:all 3s;opacity:0;}//5989//홀릭
+            img:nth-of-type(3){width:15%;position:absolute;left:15%; top:10%;transform:translateY(-50px);transition:all 3s;opacity:0;}//마니아//5706
+            img:nth-of-type(4){width:15%;position:absolute;right:15%;top:10%;transform:translateY(-50px);transition:all 3s;opacity:0;}//밀리 픽//5706(eimg2)
+            img:nth-of-type(5){width:15%;position:absolute;right:10%; top:55%;transform:translateY(50px);transition:all 3s;opacity:0;}//히든 //5989(eimg) /////4833///5077
         }
      }
 }
@@ -117,8 +117,8 @@
             h5{font-size:14px; font-weight:400; text-align:start; margin-left:5%; margin-top:5%;}       
                    
        }
-       .m63{background-color:$point_color; display:flex; flex-flow:column nowrap;justify-content:center;align-items:space-between;
-          .m6_icon{display:flex; flex-flow:row nowrap; justify-content:space-between;
+       .m63{background-color:$point_color; display:flex; flex-flow:column nowrap;justify-content:center;
+          .m6_icon{display:flex; flex-flow:row nowrap; justify-content:space-between;padding:20px;
              img{width:20%;}
              span{width: 75%;font-weight:600;font-size:16px; line-height:35px; text-align:start;}
              }
@@ -132,13 +132,18 @@
 #m7{
     @include wrap-content; background:#fff;height:934px;
     .m7_top{
-        @include main-content;height:100px;display:flex;flex-direction:row;justify-content:space-around;align-items:center;background:$back-color;
+        @include main-content;height:100px;display:flex;flex-direction:row;justify-content:space-around;align-items:center;background:$back-color;cursor:pointer;
+        .m7_audio,.m7_viewer{width:100%; height:100%; text-align:center;
+          img{width:28px; height:auto; margin:20px 0 5px;}
+  
+      }
+  
     }
     .m7_content{
        background-color:$back-color; width:100%;
-       .view {display:none;}
-       .m7_content_a{
+       .view {display:none;
         @include main-content; position:relative;height:834px;
+           >img{position:absolute;top:4%; left:2%; width:45px;}
            h2{@include h2-text;font-size:50px; position:absolute;top:0; left:0;}
            p{@include p-text;font-size:25px; text-align:left; position:absolute; top:20%; left:0;}
            .m7_text{
@@ -148,8 +153,34 @@
                     
             }
            .m7_button{position:absolute; bottom:25%;left:0; display:flex; justify-content:space-between;align-items:center;width:20%;}
-               .m7_btn{border:0.5px solid #333; border-radius:30px; width:100%; margin:2%;
+               .m7_btn{border:0.5px solid #333; border-radius:30px; width:100%; margin:2%; cursor:pointer;
             }
+            // &:nth-of-type(1){background-color:#333;color:#fff;}
+            .m7_img1{position:absolute; top:5%; right:5%; width:350px; height:600px;border-radius:55px;overflow:hidden;
+                &>img{width:100%;height:100%; position:absolute;top:0;left:0;}
+                .m7inner1{width:1400px;
+                  li{width:349px;height:600px;float:left;
+                    img,video{width:100%; height:100%;}
+                  }}
+                }
+               
+            }
+          }
+       .m7_content_a{
+        @include main-content; position:relative;height:834px;
+           >img{position:absolute;top:4%; left:2%; width:45px;}
+           h2{@include h2-text;font-size:50px; position:absolute;top:0; left:0;}
+           p{@include p-text;font-size:25px; text-align:left; position:absolute; top:20%; left:0;}
+           .m7_text{
+                    position:absolute;bottom:32%;left:0;
+                    .m7_text1>h5,b{font-size:23px; text-align:left;}
+                    .m7_text1:not(:first-child){display:none;}
+                    
+            }
+           .m7_button{position:absolute; bottom:25%;left:0; display:flex; justify-content:space-between;align-items:center;width:20%;}
+               .m7_btn{border:0.5px solid #333; border-radius:30px; width:100%; margin:2%; cursor:pointer;
+            }
+            // .m7_btn:nth-of-type(1){background-color:#333;color:#fff;}
             .m7_img{position:absolute; top:5%; right:5%; width:350px; height:600px;border-radius:55px;overflow:hidden;
                 &>img{width:100%;height:100%; position:absolute;top:0;left:0;}
                 .m7inner{width:1400px;
@@ -160,21 +191,26 @@
                
             }         
        }
-    }
+    
 
 
 
 
 #m8_wrap{
-    @include wrap_content; background:$point_color;height:567px;
+    @include wrap_content; background:$point_color; 
     .m8{
         @include main_content;
         h2{@include h2-text; padding-bottom:5%;}
-        .qna{width: 75%; height:50px; background-color:#fff; border-radius:20px; margin:15px auto; text-align:left;
-          div:nth-of-type(1){width:100%; margin:0 auto; font-size:20px;position:relative;top:0;left:30px;font-weight:700;
-               img{position:absolute;right:50px;width:30px;cursor:pointer;}}
-          div:nth-of-type(2){width:100%; height:100px;font-size:16px; border-top:1px solid #333;background-color:#fff;
-        }}
-    }
-}
+        .qna{width:800px; margin:0 auto;padding-bottom:3%;
+          >li{line-height:50px; text-align:left; padding:0 2%;background-color:#fff; margin:2% 0;border-radius:15px; font-size:17px; font-weight:700;position:relative; 
+          img{width:20px; position:absolute; top:15px; right:5%;}
+          .toggleclass{transform:rotate(180deg);}
+          
+          .answer{width:100%;display:none;border-top:0.5px solid #444;
+          li{font-size:15px;line-height:30px;font-weight:500;}}
+           }}
+        }
+      }
+    
+
 
