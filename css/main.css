@@ -33,8 +33,8 @@ header {
 }
 
 header > a img {
-  width: 100px;
-  padding: 0.5%;
+  width: 60px;
+  margin: 0.8% 1%;
 }
 
 .menu_text {
@@ -54,8 +54,10 @@ header > a img {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
-  width: 6%;
-  height: 28px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
 }
 
 #fix_menu {
@@ -139,6 +141,8 @@ footer .f_right img {
   position: absolute;
   top: 20%;
   right: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #m_top_wrap .m_top img:nth-of-type(2) {
   width: 350px;
@@ -148,6 +152,8 @@ footer .f_right img {
   transform: translateY(-30px);
   transition: all 1s;
   opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #m_top_wrap .m_top img:last-child {
   width: 180px;
@@ -157,13 +163,15 @@ footer .f_right img {
   transform: translateY(-30px);
   transition: all 1s;
   opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #m1 {
   margin: 0 auto;
   text-align: center;
   width: 1200px;
-  height: 1037px;
+  height: 1150px;
   width: 100%;
 }
 #m1 h2 {
@@ -190,23 +198,23 @@ footer .f_right img {
 }
 #m1 .m1_slide1 {
   width: 100%;
-  height: 190px;
-  margin: 0 0 0.5%;
-  background: url("../img/m1slide1.png") repeat-x;
+  height: 210px;
+  margin: 0 0 1%;
+  background: url("../img/m1slide1.png") repeat-x content-box;
   animation: slideRight 600s linear infinite;
 }
 #m1 .m1_slide2 {
   width: 100%;
-  height: 190px;
-  margin: 0.5% 0;
-  background: url("../img/m1slide2.png") repeat-x;
+  height: 210px;
+  margin: 0 0 1%;
+  background: url("../img/m1slide2.png") repeat-x content-box;
   animation: slideLeft 600s linear infinite;
 }
 #m1 .m1_slide3 {
   width: 100%;
-  height: 190px;
-  margin: 0 0 0.5%;
-  background: url("../img/m1slide3.png") repeat-x;
+  height: 210px;
+  margin: 0 0 1%;
+  background: url("../img/m1slide3.png") repeat-x content-box;
   animation: slideRight 600s linear infinite;
 }
 
@@ -256,9 +264,35 @@ footer .f_right img {
   transition: all 1.5s;
   opacity: 0;
 }
-#m2 .m2wrap img {
-  width: 60%;
-  margin: 3%;
+#m2 .m2wrap .vdobox {
+  width: 730px;
+  height: 410px;
+  margin: 3% auto;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+}
+#m2 .m2wrap .vdobox video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#m2 .m2wrap .vdobox .m2image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#m2 .m2wrap .vdobox .m2btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #m2 .m2wrap .m2_button {
   border: 0.5px solid #333;
@@ -507,6 +541,12 @@ footer .f_right img {
   transition: all 3s;
   opacity: 0;
 }
+#m5_wrap .m5 .card img:nth-of-type(6) {
+  width: 38%;
+  position: absolute;
+  left: 30%;
+  bottom: 20%;
+}
 
 #m6_wrap {
   width: 100%;
@@ -644,6 +684,9 @@ footer .f_right img {
   height: auto;
   margin: 20px 0 5px;
 }
+#m7 .m7_top .m7_viewer {
+  background-color: #fff;
+}
 #m7 .m7_content {
   background-color: #f7f7f7;
   width: 100%;
@@ -718,6 +761,10 @@ footer .f_right img {
   width: 100%;
   margin: 2%;
   cursor: pointer;
+}
+#m7 .m7_content .view .m7_btn:nth-of-type(1) {
+  background-color: #333;
+  color: #fff;
 }
 #m7 .m7_content .view .m7_img1 {
   position: absolute;
@@ -816,6 +863,10 @@ footer .f_right img {
   width: 100%;
   margin: 2%;
   cursor: pointer;
+}
+#m7 .m7_content_a .m7_btn:nth-of-type(1) {
+  background-color: #333;
+  color: #fff;
 }
 #m7 .m7_content_a .m7_img {
   position: absolute;
