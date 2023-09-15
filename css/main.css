@@ -28,36 +28,71 @@ header {
   top: 0;
   left: 0;
   background-color: #fff;
-  padding: 0.3%;
+  padding: 0.5%;
   z-index: 5;
 }
-
-header > a img {
-  width: 60px;
-  margin: 0.8% 1%;
+header .menu_logo {
+  float: left;
+  padding: 0.5% 1%;
 }
-
-.menu_text {
+header .menu_logo a img {
+  width: 65px;
+}
+header .menu_search {
+  float: left;
+  margin-left: 500px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 500px;
+  height: 45px;
+  border-radius: 50px;
+  border: 2px solid #ffe04b;
+  font-weight: 500;
+}
+header .menu_search #search_bar {
+  width: 100px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
   text-align: center;
+}
+header .menu_search #search_bar option {
+  font-size: 13px;
+}
+header .menu_search input {
+  background: none;
+  border: none;
+  width: 300px;
+  outline: none;
+  transition: all 0.3s;
+}
+header .menu_search button {
+  background: none;
+  border: none;
+}
+header .menu_search button img {
+  width: 40px;
+}
+header .menu_text {
   float: right;
-  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  margin: 0.3%;
 }
-
-.menu_text a {
-  margin: 1%;
-}
-
-.menu_text > .menu_btn {
+header .menu_text .menu_btn {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
-  width: 80px;
+  width: 70px;
   height: 30px;
   line-height: 30px;
-  margin: 10px;
+  text-align: center;
 }
 
 #fix_menu {

@@ -11,7 +11,7 @@ for (var g = 0; g < search.length; g++) {
         data: { query: search[g], size: 7 }
     })
         .done(function (m3) {
-            const boxs = document.getElementsByClassName('box');
+            const boxs = document.getElementsByClassName('#list_a >.box');
             let origin = m3.documents;
             let data = origin.filter((val) => {
                 return (val.thumbnail != "" || val.title !="");
@@ -28,19 +28,14 @@ $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book",
     headers: { Authorization: "KakaoAK 44e3b7255d8b6fc8d9d4c7f62ab7e2e4" },
-    data: { query: '2023' && '최신' && '경제' }
+    data: { query: '2023' && '최신' && '경제'  }
 })
     .done(function (m32) {
-        let m3boxs = document.getElementsByClassName('box');
+        let m3boxs = document.querySelectorAll('#list_b .box');
         let origin = m32.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");
         })
-        // let data2 = origin.filter((val)=>{
-        //     return val.title !="";
-        // })
-        console.log(data)
-        // console.log(data2)
 
         for (let b = 0; b < m3boxs.length; b++) {
             $("#list_b >.box").eq(b).append("<img src=" + data[b].thumbnail + "/>");
@@ -58,8 +53,7 @@ $.ajax({
     data: { query: '오디오북' }
 })
     .done(function (m33) {
-        console.log(m33)
-        const m3boxs = document.getElementsByClassName('box');
+        const m3boxs = document.querySelectorAll('#list_c .box');
         let origin = m33.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");
@@ -83,7 +77,7 @@ $.ajax({
     data: { query: "주식" && "베스트" && "최신" && "투자" }
 })
     .done(function (m41) {
-        const m4boxs = document.getElementsByClassName('box');
+        const m4boxs = document.querySelectorAll('#m4>.r1>.box');
         let origin = m41.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");
@@ -110,7 +104,7 @@ $.ajax({
     data: { query: "영어" && "베스트" && "최신" && "기출" }
 })
     .done(function (m42) {
-        const m4boxs = document.getElementsByClassName('box');
+        const m4boxs = document.querySelectorAll('#m4>.r2>.box');
         let origin = m42.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");
@@ -135,7 +129,7 @@ $.ajax({
     data: { query: "고전" && "인문" }
 })
     .done(function (m43) {
-        const m4boxs = document.getElementsByClassName('box');
+        const m4boxs = document.querySelectorAll('#m4>.r3>.box');
         let origin = m43.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");
@@ -153,30 +147,29 @@ $.ajax({
     });
 
 
-$.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v3/search/book",
-    headers: { Authorization: "KakaoAK 44e3b7255d8b6fc8d9d4c7f62ab7e2e4" },
-    data: { query: "인테리어" }
-})
-    .done(function (m44) {
-        const m4boxs = document.getElementsByClassName('box');
-        let origin = m44.documents;
-        let data = origin.filter((val) => {
-            return (val.thumbnail != "" || val.title !="");
-        })
-
-        for (let i = 0; i < m4boxs.length; i++) {
-            // let str = m44.documents[i].title[i];
-            // // console.log(str);
-            // let str1 = str.substring(0, 21);
-
-            $("#m4>.r4 >.box").eq(i).append("<img src=" + data[i].thumbnail + "/>");
-            $("#m4>.r4 >.box").eq(i).append("<h3>" + data[i].title + "</h3>");
-            $("#m4>.r4 >.box").eq(i).append("<h6>" + data[i].authors + "</h6>");
-            $("#m4>.r4 >.box").eq(i).append("<h5>" + data[i].sale_price + "원</h5>")
-        }
-    });
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book",
+        headers: { Authorization: "KakaoAK 44e3b7255d8b6fc8d9d4c7f62ab7e2e4" },
+        data: { query: "인테리어"}
+    })
+        .done(function (m44) {
+            const m4boxs = document.querySelectorAll('#m4>.r4>.box');
+            let origin = m44.documents;
+            let data = origin.filter((val) => {
+                return (val.thumbnail != "" || val.title !="");
+            })
+    
+            for (let i = 0; i < m4boxs.length; i++) {
+                // let str = m43.documents[i].title;
+                // let str1 = str.substring(0, 21);
+    
+                $("#m4>.r4 >.box").eq(i).append("<img src=" + data[i].thumbnail + "/>");
+                $("#m4>.r4 >.box").eq(i).append("<h3>" + data[i].title + "</h3>");
+                $("#m4>.r4 >.box").eq(i).append("<h6>" + data[i].authors + "</h6>");
+                $("#m4>.r4 >.box").eq(i).append("<h5>" + data[i].sale_price + "원</h5>")
+            }
+        });
 
 
 $.ajax({
@@ -186,7 +179,7 @@ $.ajax({
     data: { query: "다이어트" }
 })
     .done(function (m45) {
-        const m4boxs = document.getElementsByClassName('box');
+        const m4boxs = document.querySelectorAll('#m4>.r5>.box');
         let origin = m45.documents;
         let data = origin.filter((val) => {
             return (val.thumbnail != "" || val.title !="");

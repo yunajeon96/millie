@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "vaiables","reset","common","mixins";
+
+#purchase_box{
+    width:100%; height:70px; position:fixed; background-color:#fff; text-align:center; border-top: 1px solid #dfdfdf; bottom:1%; display:flex; justify-content:space-around; align-items:center;
+    .leftbox{display:flex; justify-content:space-around; width:15%; height:100%; align-items:center; margin-left:80px; 
+     p{font-size:18px;}
+     h6{font-size:20px;}}
+    .rightbox{margin-right:100px; display:flex; flex-flow:row nowrap; height:100%;width:33%;justify-content:space-between; align-items:center;
+       .calculate{display:flex; justify-content:space-around; align-items:center; height:70%; border:none; width:130px;
+         >div{font-size:18px;flex-grow:1; font-weight:700;width:130px;}
+         .price_value{border:none; width:20px; font-size:18px;}
+        }
+        >div{border:1px solid #dfdfdf;height:70%;border-radius:5px;text-align:center; line-height:45px;width:100px;font-size:17px;}
+        .check{display:flex; justify-content:space-around; align-items:center;width:130px;height:70%;
+           :nth-of-type(1){flex-grow:1;}
+           :nth-of-type(2){background-color:$point_color;flex-grow:1;}}
+    }
+    
+}
+
