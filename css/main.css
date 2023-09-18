@@ -40,7 +40,7 @@ header .menu_logo a img {
 }
 header .menu_search {
   float: left;
-  margin-left: 500px;
+  margin-left: 20%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -82,7 +82,7 @@ header .menu_text {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 550px;
+  width: 30%;
   margin: 0.3%;
 }
 header .menu_text .menu_btn {

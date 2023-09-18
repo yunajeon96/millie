@@ -1,9 +1,30 @@
 //메모장 가져오기
 
 $(function () {
-    $.get("./sub_txt/txt1.txt", function (data) {
+    $.get("./sub_text/txt1.txt", function (data) {
       $(".introduce").html(data);
     })
+
+    $.get("./sub_text/txt2.txt", function(t2){
+       $(".tx2box p").html(t2);
+    })
+
+    $.get("./sub_text/txt3.txt", function(t3){
+      console.log(t3);
+      $(".suggestion").html(t3);
+   })
+
+   $.get("./sub_text/txt4.txt", function (data) {
+    $(".into_book").html(data);
+  })
+
+  $.get("./sub_text/txt5.txt", function (data) {
+    $(".information").html(data);
+  })
+
+  $.get("./sub_text/txt6.txt", function (data) {
+    $(".return").html(data);
+  })
 })
 
 // fixed 박스 계산식
