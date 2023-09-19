@@ -35,16 +35,16 @@
         </div>
     </header>
     <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- <div id="purchase_box">
+    <div id="purchase_box">
         <div class="leftbox">
             <p>총 상품 금액</p>
             <h6 id="price_sum"></h6>
         </div>
         <div class="rightbox">
             <div class="calculate">
-                <div class="minus">－</div>
+                <div id="minus">－</div>
                 <input type="text" class="price_value" value="1">
-                <div class="plus">＋</div>
+                <div id="plus">＋</div>
             </div>
             <div>♡</div>
             <div>선물하기</div>
@@ -54,7 +54,7 @@
                 <div>바로구매</div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
     <div id="sub_top">
@@ -124,17 +124,22 @@
                 <p><a href="$">교환/반품/품절</a></p>
             </div>
 
+            <h6>이 책의 이벤트</h6>
             <div class="event">
-                <h6>이 책의 이벤트</h6>
-                <img src="img/banner.png" alt="banner">
-                <h5>[밀리 단독] 소중한 사람에게 선물하세요</h5>
-                <p>2023/11/23~2023/11/30</p>
+                <div class="p">
+                 <img src="img/event.jpg" alt="banner">
+                 <h5>[밀리 단독]이달의 책 9월</h5>
+                 <p>2024/09/01~2024/09/30</p>
+                </div>
+                <div class="p">
+                    <img src="img/event2.jpg" alt="banner">
+                    <h5>[하루키to머스크]가을 독서 BIG 3</h5>
+                    <p>2023/11/23~2023/11/30</p>
+                   </div>
             </div>
             <div class="with">
                 <h6>함께 구매한 책</h6>
                 <div class="sublist1">
-                    <div class="box"></div>
-                    <div class="box"></div>
                     <div class="box"></div>
                     <div class="box"></div>
                     <div class="box"></div>
@@ -201,7 +206,7 @@
                     <p>현대소설가 > 프랑스작가</p>
                     <div class="tx2box">
                         <img src="img/authorimg.jpg" alt="img">
-                        <p><!-- txt2 삽입 --></p></div>
+                        <span><!-- txt2 삽입 --></span></div>
                     <div class="author_list">
                         <div class="box"></div>
                         <div class="box"></div>
@@ -228,8 +233,29 @@
 
         </div>
         <div class="sub_right">
-            <div class="side_best"></div>
-            <div class="side_new"></div>
+            <div class="side_best">
+                <h1>이 분야의 베스트<span>더보기></span></h1>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="ad">
+                <img src="img/ad1.jpg" alt="ad">
+            </div>
+            <div class="side_new">
+                <h1>이 분야의 신간<span>더보기></span></h1>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="ad">
+                <img src="img/ad2.png" alt="ad">
+                <img src="img/ad3.png" alt="ad">
+            </div>
         </div>
     </div>
 
@@ -259,6 +285,7 @@
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
     <script src="js/sub.js"></script>
+    <script src="js/subajaxlist.js"></script>
 
 
 

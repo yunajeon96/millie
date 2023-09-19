@@ -72,3 +72,8 @@ _365~366쪽
 _446~447쪽
 <br><br>
 </p>
+
+<button id="txt4_show">
+<span>더보기</span>
+<img src="img/hide.png" alt="더보기">
+</button>

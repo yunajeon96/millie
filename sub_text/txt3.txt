@@ -24,6 +24,7 @@
 독창적인 글쓰기. 독자와의 독특한 관계 설정. 허구와 현실의 아름다운 조합.
 </p>
 
+<div class=hide>
 <h3>
 디렉트 수와르(Direct Soir)
 </h3>
@@ -48,6 +49,11 @@
 기욤 뮈소는 있을 법하지 않은 이야기에 꿈과 리듬을 불어넣는 재주가 있다.
 </p>
 
+</div>
 
+<button id="txt3_show">
+<span>더보기</span>
+<img src="img/hide.png" alt="더보기">
+</button>
 
 
