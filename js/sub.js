@@ -87,6 +87,8 @@ $(function () {
   })
 });
 
+
+
 //키워드 pick 슬라이드
 $(function(){
    let sul=$('#pick_list li');
@@ -99,6 +101,33 @@ $(function(){
     sul.eq(d).siblings().css({'background':'#f7f7f7','color':'#333'});
     pick.eq(d+1).show().siblings('.pick').hide();
   })
+})
+
+
+//book img 회전 애니메이션
+
+$(function(){
+  var rotated=false;
+
+  $('.bookimg').click(function(){
+    if(rotated){$(this).css("transform","rotateY(35deg)");
+    rotated=false;
+  }else{$(this).css("transform","rotateY(180deg)");
+    rotated=true;}
+  });
+
+  $('.bookimg').hover(
+    function(){
+      if(!rotated){
+        $(this).css("transform","rotateY(35deg)");
+      }
+    },
+    function(){
+      if(!rotated){
+        $(this).css("transform","rotateY(0deg)")
+      }
+    }
+  )
 })
 
 

@@ -162,6 +162,7 @@ footer .f_right img {
   width: 100%;
   height: 70px;
   position: fixed;
+  z-index: 40;
   background-color: #fff;
   border-top: 1px solid #dfdfdf;
   bottom: 0;
@@ -279,9 +280,50 @@ footer .f_right img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+#sub_top .imgbox .bookimg {
+  position: relative;
+  width: 500px;
+  height: 630px;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 #sub_top .imgbox .bookimg img {
-  width: 90%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sub_top .imgbox .bookimg:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: url(../img/bookside.jpg);
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(90deg);
+}
+#sub_top .imgbox .bookimg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  background: url(../img/bookback.jpg);
+  transform: rotateY(180deg) translateZ(60px);
+  background-size: cover;
+  background-position: center;
 }
 #sub_top .imgbox .price {
   width: 600px;
