@@ -104,13 +104,16 @@ $(function(){
 })
 
 
+
+
 //book img 회전 애니메이션
 
 $(function(){
   var rotated=false;
 
   $('.bookimg').click(function(){
-    if(rotated){$(this).css("transform","rotateY(35deg)");
+    if(rotated){$(this).css("transform","rotateY(45deg)");
+    
     rotated=false;
   }else{$(this).css("transform","rotateY(180deg)");
     rotated=true;}
@@ -119,7 +122,7 @@ $(function(){
   $('.bookimg').hover(
     function(){
       if(!rotated){
-        $(this).css("transform","rotateY(35deg)");
+        $(this).css("transform","rotateY(45deg)");
       }
     },
     function(){

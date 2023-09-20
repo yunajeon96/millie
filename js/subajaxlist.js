@@ -151,7 +151,7 @@ $.ajax({
                 
                 for (let sw = 0; sw < sboxs.length; sw++) {
                     let str=data[sw].title;
-                    let str2=str.substring(0,15)
+                    let str2=str.substring(0,14)
                     $(".side_best .box").eq(sw).append("<img src=" + data[sw].thumbnail + "/>");
                     $(".side_best .box").eq(sw).append("<div class=ranking>" + (sw+1)+ "</div>");
                     $(".side_best .box").eq(sw).append("<h3>" + str2 + "</h3>");
@@ -176,7 +176,7 @@ $.ajax({
                     
                     for (let sw = 0; sw < sboxs.length; sw++) {
                         let str=data[sw].title;
-                        let str2=str.substring(0,15)
+                        let str2=str.substring(0,14)
                         $(".side_new .box").eq(sw).append("<img src=" + data[sw].thumbnail + "/>");
                         $(".side_new .box").eq(sw).append("<div class=ranking>" + (sw+1) + "</div>");
                         $(".side_new .box").eq(sw).append("<h3>" + str2 + "</h3>");

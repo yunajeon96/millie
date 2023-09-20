@@ -280,31 +280,35 @@ footer .f_right img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
-#sub_top .imgbox .bookimg {
+#sub_top .imgbox .imgwrap {
+  width: 420px;
+  height: 600px;
+  transform-style: preserve-3d;
+  perspective: 1500px;
+}
+#sub_top .imgbox .imgwrap .bookimg {
   position: relative;
-  width: 500px;
-  height: 630px;
+  width: 100%;
+  height: 100%;
   transition: 0.5s;
   transform-style: preserve-3d;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  cursor: url(../img/cursor.svg), pointer;
 }
-#sub_top .imgbox .bookimg img {
+#sub_top .imgbox .imgwrap .bookimg img {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-#sub_top .imgbox .bookimg:before {
+#sub_top .imgbox .imgwrap .bookimg:before {
   content: "";
   position: absolute;
-  width: 60px;
+  width: 71px;
   height: 100%;
-  background: url(../img/bookside.jpg);
+  background: url(../img/bookside.png);
   top: 0;
   left: 0;
   transform-origin: left;
@@ -312,7 +316,7 @@ footer .f_right img {
   background-position: center;
   transform: rotateY(90deg);
 }
-#sub_top .imgbox .bookimg:after {
+#sub_top .imgbox .imgwrap .bookimg:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -321,7 +325,7 @@ footer .f_right img {
   left: 0;
   transform-origin: center;
   background: url(../img/bookback.jpg);
-  transform: rotateY(180deg) translateZ(60px);
+  transform: rotateY(180deg) translateZ(71px);
   background-size: cover;
   background-position: center;
 }
@@ -509,7 +513,8 @@ footer .f_right img {
 #sub_wrap .sub_left .event .p img {
   width: 90%;
 }
-#sub_wrap .sub_left .event .p h5, #sub_wrap .sub_left .event .p p {
+#sub_wrap .sub_left .event .p h5,
+#sub_wrap .sub_left .event .p p {
   margin: 2% 0;
 }
 #sub_wrap .sub_left .with .sublist1 {
@@ -838,6 +843,7 @@ footer .f_right img {
   margin-left: 130px;
 }
 #sub_wrap .sub_right .side_best .box {
+  width: 330px;
   height: 200px;
   margin: 1%;
   display: flex;
@@ -845,19 +851,23 @@ footer .f_right img {
   align-items: flex-start;
 }
 #sub_wrap .sub_right .side_best .box img {
-  width: 35%;
+  width: 115px;
   margin: 3%;
 }
 #sub_wrap .sub_right .side_best .box .ranking {
-  background: #777;
+  background: #ffe04b;
   color: #fff;
   margin-top: 15%;
   width: 25px;
   border-radius: 5px 0 5px 0;
+  align-self: flex-start;
 }
 #sub_wrap .sub_right .side_best .box h3 {
   font-size: 15px;
   margin-top: 3%;
+  align-self: flex-start;
+  width: 167px;
+  text-align: left;
 }
 #sub_wrap .sub_right .side_best .box h6 {
   font-size: 13px;
@@ -896,6 +906,7 @@ footer .f_right img {
   margin-left: 160px;
 }
 #sub_wrap .sub_right .side_new .box {
+  width: 330px;
   height: 200px;
   margin: 1%;
   display: flex;
@@ -903,20 +914,23 @@ footer .f_right img {
   align-items: flex-start;
 }
 #sub_wrap .sub_right .side_new .box img {
-  width: 35%;
+  width: 115px;
   margin: 3%;
 }
 #sub_wrap .sub_right .side_new .box .ranking {
-  background: #777;
+  background: #ffe04b;
   color: #fff;
-  width: 20px;
   margin-top: 15%;
   width: 25px;
   border-radius: 5px 0 5px 0;
+  align-self: flex-start;
 }
 #sub_wrap .sub_right .side_new .box h3 {
   font-size: 15px;
   margin-top: 3%;
+  align-self: flex-start;
+  width: 167px;
+  text-align: left;
 }
 #sub_wrap .sub_right .side_new .box h6 {
   font-size: 13px;
