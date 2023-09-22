@@ -85,10 +85,7 @@ header .menu_text {
   width: 30%;
   margin: 0.3%;
 }
-header .menu_text a:hover {
-  font-weight: bold;
-}
-header .menu_text a:hover .menu_btn {
+header .menu_text .menu_btn {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
@@ -96,6 +93,9 @@ header .menu_text a:hover .menu_btn {
   height: 30px;
   line-height: 30px;
   text-align: center;
+}
+header .menu_text a:hover {
+  font-weight: bold;
 }
 
 #fix_menu {

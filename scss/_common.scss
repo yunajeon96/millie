@@ -76,11 +76,7 @@ header {
         align-items: center;
         width: 30%;
         margin: 0.3%;
-
-        a:hover {
-            font-weight: bold;
-
-            .menu_btn {
+           .menu_btn {
                 border-radius: 20px;
                 background-color: #333;
                 color: #fff;
@@ -89,7 +85,7 @@ header {
                 line-height: 30px;
                 text-align: center;
             }
-        }
+        a:hover{font-weight:bold;}
     }
 }
 
