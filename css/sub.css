@@ -85,7 +85,10 @@ header .menu_text {
   width: 30%;
   margin: 0.3%;
 }
-header .menu_text .menu_btn {
+header .menu_text a:hover {
+  font-weight: bold;
+}
+header .menu_text a:hover .menu_btn {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
@@ -114,7 +117,6 @@ footer {
   margin: 0 auto;
   text-align: center;
   width: 1200px;
-  width: 75%;
   height: 245px;
   text-align: left;
 }
@@ -505,7 +507,7 @@ footer .f_right img {
   padding: 3.5% 0;
 }
 #sub_wrap .sub_left .list p:hover {
-  color: #ffe04b;
+  font-weight: bold;
 }
 #sub_wrap .sub_left .event {
   display: flex;
@@ -562,14 +564,16 @@ footer .f_right img {
   margin: 1% 0;
 }
 #sub_wrap .sub_left .pick #pick_list li {
-  margin: 1%;
-  border: 1px solid #f7f7f7;
-  padding: 1%;
-  border-radius: 20px;
-  background: #f7f7f7;
+  margin: 2% 2% 2% 0;
+  padding: 0.5%;
+  border: 0.5px solid #333;
+  border-radius: 15px;
+  width: 11%;
+  cursor: pointer;
+  text-align: center;
 }
 #sub_wrap .sub_left .pick #pick_list li:nth-of-type(1) {
-  background: #666;
+  background: #333;
   color: #fff;
 }
 #sub_wrap .sub_left .pick .pick {
@@ -793,15 +797,18 @@ footer .f_right img {
   width: 20px;
   transform: rotate(180deg);
 }
-#sub_wrap .sub_left .review h2 {
-  font-size: 20px;
-  margin: 2% 0;
+#sub_wrap .sub_left .review .rehead {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 2% 0 0;
 }
-#sub_wrap .sub_left .review h2 div {
-  border: 1px solid #ddd;
+#sub_wrap .sub_left .review .rehead div:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+#sub_wrap .sub_left .review .rehead div:nth-of-type(2) {
+  border: 0.5px solid #ddd;
   background: #ffe04b;
   font-weight: 400;
   padding: 1%;
@@ -812,10 +819,10 @@ footer .f_right img {
   justify-content: space-around;
   width: 100px;
 }
-#sub_wrap .sub_left .review h2 div img {
+#sub_wrap .sub_left .review .rehead div:nth-of-type(2) img {
   width: 18px;
 }
-#sub_wrap .sub_left .review h2 div span {
+#sub_wrap .sub_left .review .rehead div:nth-of-type(2) span {
   font-weight: 500;
   align-self: center;
   color: #333;
@@ -827,7 +834,7 @@ footer .f_right img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 #sub_wrap .sub_left .review .rvbox .rvbox_left {
   margin: 3%;
@@ -891,7 +898,7 @@ footer .f_right img {
 }
 #sub_wrap .sub_left .review .rvbox .rvbox_right h6 span {
   font-size: 25px;
-  color: #4dac27;
+  color: #333;
   font-weight: 900;
 }
 #sub_wrap .sub_left .review .rvbox .rvbox_right .rvwrap {
@@ -952,10 +959,15 @@ footer .f_right img {
   margin-left: 0.5%;
   cursor: pointer;
 }
-#sub_wrap .sub_left .return h3 div:nth-of-type(2) {
+#sub_wrap .sub_left .return h3 .reviewflex {
   background: #ffe04b;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
 }
-#sub_wrap .sub_left .return h3 div:nth-of-type(2) img {
+#sub_wrap .sub_left .return h3 .reviewflex img {
   width: 18px;
 }
 #sub_wrap .sub_left .return ul {
@@ -977,8 +989,8 @@ footer .f_right img {
 #sub_wrap .sub_right .side_best {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: space-around;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 #sub_wrap .sub_right .side_best h1 {
   font-size: 18px;
@@ -1044,8 +1056,8 @@ footer .f_right img {
 #sub_wrap .sub_right .side_new {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: space-around;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 #sub_wrap .sub_right .side_new h1 {
   font-size: 18px;

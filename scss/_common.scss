@@ -75,17 +75,20 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 30%;
-        margin:0.3%;
+        margin: 0.3%;
 
+        a:hover {
+            font-weight: bold;
 
-        .menu_btn {
-            border-radius: 20px;
-            background-color: #333;
-            color: #fff;
-            width: 70px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
+            .menu_btn {
+                border-radius: 20px;
+                background-color: #333;
+                color: #fff;
+                width: 70px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+            }
         }
     }
 }
@@ -111,7 +114,6 @@ header {
 
 footer {
     @include main-content;
-    width: 75%;
     height: 245px;
     text-align: left;
 
@@ -160,6 +162,5 @@ footer {
             margin: 0 2%;
         }
     }
-
 }
 

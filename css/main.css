@@ -85,7 +85,10 @@ header .menu_text {
   width: 30%;
   margin: 0.3%;
 }
-header .menu_text .menu_btn {
+header .menu_text a:hover {
+  font-weight: bold;
+}
+header .menu_text a:hover .menu_btn {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
@@ -114,7 +117,6 @@ footer {
   margin: 0 auto;
   text-align: center;
   width: 1200px;
-  width: 75%;
   height: 245px;
   text-align: left;
 }
